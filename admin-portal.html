@@ -1,3 +1,11 @@
+<script>
+
+    let searchParams = new URLSearchParams(window.location.search);
+    let param = searchParams.get('role');
+    console.log(param);
+
+</script>
+
 <!DOCTYPE html>
 <htML>
     <head>
@@ -32,7 +40,7 @@
                 openLinkPage(document.getElementById('link-select').value);
             }) 
             $(document).ready(function() {
-                listFunctions();
+                listFunctions(param);
             }) 
         </script>
     </body>
