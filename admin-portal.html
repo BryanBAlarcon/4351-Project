@@ -28,9 +28,11 @@
         </div>
         <script>
             // these will be used to make the buttons work and to fill out the link dropdown
+            $('#go-button').click(function() {
+                openLinkPage(document.getElementById('link-select').value);
+            }) 
             $(document).ready(function() {
                 listFunctions();
-                openLinkPage();
             }) 
         </script>
     </body>

@@ -36,8 +36,8 @@
         </div>
         <script>
             // this will be used for the button
-            $(document).ready(function() {
-                getCorrectLinks(text);
+            $('#login').click(function() {
+                getCorrectLinks(document.getElementById('admin-select').value);
             }) 
         </script>
     </body>

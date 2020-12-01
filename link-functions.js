@@ -1,6 +1,6 @@
 function listFunctions() {
     //this function will fill the the link-select options depening on what admin role is in the url
-    var adminRole = 'ADMIN';
+    var adminRole = 'TECH_ADMIN';
     console.log(adminRole);
     options = '';
     $('#link-select').empty();
@@ -24,5 +24,8 @@ function listFunctions() {
 }
 
 function openLinkPage(text) {
-    //this function will open a 404 page for the link after clicking go
+    console.log(text);
+    var url = '404-page.html?link=' + text;
+    console.log(url);
+    window.open(url, '_self');
 }
